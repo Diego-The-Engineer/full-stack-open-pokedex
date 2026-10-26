@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    jest: true
+    'jest/globals': true
   },
   extends: [
     'eslint:recommended',
@@ -49,5 +49,10 @@ module.exports = {
     ],
     'no-console': 'error',
     'react/prop-types': 0
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
